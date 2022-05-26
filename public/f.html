@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./f.css">
+    <script>
+      let i = document.querySelector('#scroll')
+      i.contentWindow.scrollTo(0, i.contentDocument.body.scrollHeight);
+    </script>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+
+<div class="wrapper">
+  <div class="top"><div class="title"><h1>Exploratory Data Analysis: Data Professionals' Salaries in 2022</h1></div></div>
+  <div class="content">
+    <div class="card first">
+      <h2><a href="#">Exploratory Data Analysis: Data Professionals' Salaries in 2022</a></h2>
+      <p class="text">This project is about an Exploratory Data Analysis on the salaries of working professionals in the data industry in India (2022).
+        The dataset is taken from kaggle, it is made by the author by scraping Glassdoor, which is a wesbite that allows users to anonymously access and publish information about compabies, jobs, salaries and more.
+        The dataset contains information about the companies, salaries, locations and job titles of the professionals.
+        The goal of this project is to do an analysis of the data, extract information, visualize the data by plotting charts and graphs for easier understanding and finally gather some insights and make inferences.
+        This will be done using Python and some of its libraries like Pandas, NumPy, MatplotLib, Seaborn and more.
+    </div>
+    <div class="card"><h2><a href="#">Visualization</a></h2>
+      <p class="text">It is now time to:
+        Ask important questions to gather some insight.
+        Visualize information by plotting charts and graphs.
+        Analyse and extract information from the dataset.<br>
+        </div>
+    <div class="card"><h2><a href="#">Q. Which company hires the most?</a></h2>
+      <iframe width="1000" height="400" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=46&hideInput=true"></iframe>
+        <br>
+The word cloud is made from the first word of the companies: Tata - Tata Consultancy Services.
+Looks like companies like Amazon, Google, IBM, Fresher, Tata Consultancy Services and more are having a lot of positions in the data domain.
+</div>
+               <div class="card"><h2><a href="#">Q. What are the different jobs in the data industry?
+            </a></h2>
+            <iframe width="1000" height="400" frameborder="0" scrolling="yes" src=" https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=51&hideInput=true"></iframe>
+                  <br>
+                  As you can see Data Scientists are making up the majority of the jobs in this industry.
+                  But actually resposnisbilities of Data Scientists very commonly overlaps some or all of the other sub domains.
+                  For example their work may include some data analysis and then making some machine learning models.
+                  It is also possible for mutiple job titles to exist for the same work, but that is not very common.
+                       </div>
+    <div class="card"><h2><a href="#">Q. What company pays the highest salaries and what are they?</a></h2>
+        <iframe width="1000" height="400" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=56&hideInput=true"></iframe>
+        <br>
+      <p class="text">Looks like the salaries are very high at the top level!
+        The highest salary is ₹17 Crores (17,11,48,000).
+        The highest salaries are ranging from about ₹10 Crores to ₹75 Lakhs (10,00,00,000 - 75,00,000).
+        Though only a handful of people are making this amount of money.    
+        These salaries are unusually high, the person might be a CEO, there might be a typing mistake or the values could be fake.
+        These are obviously not an accurate represntation of the rest.
+        The highest salaries are way above the mean or median.
+The highest salaries are way above the mean or median.
+You cant even see the box plot with them included.
+The second box plot does give some insight with the highest salaries removed.    
+It might be more insightful to know about the distribution of all salaries across a more realistic range.
+
+          </p>
+      </div>
+      <div class="card"><h2><a href="#">Q. What is the distribution of salaries?</a></h2>
+        <iframe id="scroll" width="1000" height="400" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=59&hideInput=true"></iframe>
+      <p class="text">    
+        90-95% of people are making under ₹20 Lakhs (20,00,000).
+        You can see how the highest salaries give a skewed represntation of the industry, while the reality is quite different.
+        Its better to class the highest salaries as the outliers and remove them when making a general inference or statement.
+          </p>
+      </div>
+      <div class="card"><h2><a href="#">Q. What is the average and median Salaries by Fields?
+    </a></h2>
+        <iframe width="1000" height="500" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=62&hideInput=true"></iframe>
+
+      <p class="text">    
+        Proffesionals in the Data Science field are making significantly more than people in the other domains.
+        The median range from just under ₹10 lakhs - ₹5 lakhs (10,00,000 - 5,00,000)
+        Here it is better to look at the median yearly salary than the average.
+        Because the average is heavily affected by the outliers inthe data, while the median is not.
+    </p>
+      </div>
+      <div class="card"><h2><a href="#">Q. Which location pays the most salary?
+    </a></h2>
+        <iframe width="1000" height="400" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=65&hideInput=true"></iframe>
+
+        <p class="text">    
+         
+Looks like Pune, Bangalore and Hyderabad offer higher salaries, around ₹12 lakhs (12,00,000).
+
+    
+But these values are being affected by the outliers, so the actual average might be slightly less
+
+    </p>
+      </div>
+      <div class="card"><h2><a href="#">Q. What are the salaries according to the seniority level?
+
+    </a></h2>
+        <iframe width="1000" height="400" frameborder="0" scrolling="yes" src="https://jovian.ai/embed?url=https://jovian.ai/aseemdandgaval1/eda-industy-salaries/v/1&cellId=69&hideInput=true"></iframe>
+        <br>
+      <p class="text">    
+        The entry point to jobs in the data space is around ₹6 lakhs (6,00,00), though this might be slightly affected by the lowest yearly salaries, which were not jobs, but actually internships that paid only ₹5-10k per moth.
+        If you work hard and become a manager or a senior, you can expect to earn in the range of ₹15-25 lakhs (15,00,000 - 25,00,000).
+    </p>
+      </div>
+      <div class="card"><h2><a href="#">Inferences and Conclusion
+
+    </a></h2>
+        
+      <p class="text">    
+        Here is the summary of the analysis done up until now:
+There are a lot of jobs in the data industry, with companies like Amazon, Google, IBM, TCS etc. having a lot positions.
+The general range of salaries (all levels) is about ₹6 - ₹25 Lakhs.
+The jobs in the Data Science subdomain pay more than the other domains, while jobs in Data Analysis pay the least.
+IT hubs like Pune, Bangalore and Hyderabad are great places to work in whith slightly higher pay than the other cites.
+If you work hard and smartly, there is good growth in this industry with a substantial increase in pay as well. </p>
+      </div>
+  </div>
+</div>
+</body>
+</html>
