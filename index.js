@@ -43,13 +43,13 @@ app.post("/sign_up",(req,res)=>{
     });
 })
 
-
+var PORT = process.env.PORT || 5000;
 app.get("/",(req,res)=>{
     res.set({
         "Allow-access-Allow-Origin": '*'
     })
     return res.redirect('index.html');
-}).listen(3001);
+}).listen(PORT);
 
 
-console.log("Listening on PORT 3001");
+console.log(`Listening on PORT ${PORT}`);
